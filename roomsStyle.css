@@ -1,0 +1,1148 @@
+*{
+    box-sizing: border-box;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    z-index: 2;
+}
+
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 90vh;
+}
+header{
+    background-color: black;
+    /* z-index: -1; */
+}
+header::before{
+    content: "";
+    position: absolute;
+    background: url('./headerBefore.webp') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    opacity: .5;
+
+}
+
+/* DropDown Button */
+
+.dropDown{
+    display: none;
+    /* border: 4px solid white; */
+    width: 40px;
+    height: 38px;
+    padding: 3px;
+    margin: 20px 40px 0px 20px;
+    position: relative;
+    /* position: relative; */
+    z-index: 10;
+}
+
+.lines{
+    margin-bottom: 5px;
+    background-color: white;
+    width: 25px;
+    height: 4.5px;
+}
+
+.dropDown:hover .DDbox{
+    display: inline-block;
+}
+
+.DDbox{
+    display: none;
+    /* display: inline-block; */
+    background-color: gray;
+    width: 150px;
+    height: 200px;
+    padding-left: 20px;
+    position: relative;
+    left: -10px;
+}
+.DDbox a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.DDboxContent{
+    /* border: 2px solid black; */
+    padding: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+/* Navigation */
+
+
+
+/* Logo */
+
+.logo{
+    background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg') no-repeat center center/cover;
+    width: 7rem;
+    height: 6rem;
+}
+
+
+/* Navbar List */
+
+.navigation{
+    display: flex;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 8vw;
+    margin: auto;
+}
+
+.navigation ul li{
+    display: flex;
+    /* font-family: mv boli; */
+    font-weight: bolder;
+    font-size: 1.5rem;
+    list-style: none; 
+    padding: 10px; 
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+li:hover {
+    box-shadow: 0px 0px 10px 10px white;
+
+}
+
+.navigation ul li a{
+    color: white;
+    text-decoration: none;
+    /* color: white; */
+}
+
+
+/* Section */
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 70vh;
+    margin: auto;
+    
+}
+
+section h1{
+    font-size: 5rem;
+    margin: 10px;
+    color: white;
+}
+section p{
+    color: white;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+/* Booking Button */
+
+.bookBtn{
+    margin: auto;
+    box-shadow: 0px 0px 4px 5px black;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+}
+
+.BBlink{
+    display: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/* Booking box */
+
+#booking {
+    position: relative;
+    width: 80vw;
+    height: 20vh;
+    bottom: 70px;
+    margin: auto;
+    /* border: 2px solid black; */
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 40px 0px 0px 20px;
+    color:white;
+    font-size: 1.5rem;
+    width: 16vw ;
+    height: 19.5vh ;
+    border: 2px solid white;
+}
+
+input , select{
+    width: 8.4rem;
+}
+
+
+/* Services */
+
+#serviceHead{
+    text-align: center;
+    font-size: 30px;
+}
+
+#service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 300px;
+    gap: 10px;
+}
+
+#service .box{
+    border: 2px solid black;
+    border-radius: 400px 400px 400px 0px;
+    width: 200px;
+    height: 200px;
+    padding-left: 50px;
+}
+
+#service .box h3{
+    color: black;
+}
+
+.serviceSign{
+    width: 60px;
+    height: 60px;
+}
+
+/* Rooms */
+
+.roomBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: row wrap; */
+    /* border: 2px solid black; */
+}
+
+.roomHead h3{
+    text-align: center;
+    font-size: 25px;
+}
+.roomHead h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.rooms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.roomTypes{
+    width: 400px;
+    height: 530px;
+    text-align: center;
+}
+
+.rooms p{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.roomTypes img{
+    padding: 20px;
+    width: 350px;
+    height: 300px;
+    display: flex;
+}
+
+.roomTypes input{
+    height: 40px;
+    width: 200px;
+}
+
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 30px;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+.explore input{
+    font-size: 30px;
+    width: 20vw;
+    height: 10vh;
+}
+
+/* Hotel Video */
+
+.hotelVideo{
+    width: 100%;
+    height: 90vh;
+    /* border: 2px solid black; */
+}
+
+
+/* Review */
+
+.reviewHead{
+    width: 100%;
+    height: 20vh;
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 30px;
+}
+
+.reviewHead h3{
+    font-size: 25px;
+}
+
+.reviewHead h1{
+    font-size: 50px;
+}
+
+.review{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.persons{  
+    /* border: 2px solid black; */
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+}
+
+.persons .img{
+    display: inline-block;
+    /* border: 2px solid black; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.persons h2{
+    position: relative;
+    top: -40px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    /* border: 2px solid black; */
+}
+
+/* About Us */
+
+.about{
+    text-align: center;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 80vh;
+}
+
+.about h1{
+    padding: 20px;
+    font-size: 5rem;
+}
+.about p{
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.about input{
+    font-size: 2rem;
+    height: 60px;
+    width: 500px;
+}
+
+/* Social Handles */
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid black; */
+}
+
+.socialLinks{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid black; */
+}
+
+#facebook{
+    background: url('./facebook.png') no-repeat center center/cover;
+}
+
+#insta{
+    background: url('./instagram.png') no-repeat center center/cover;
+}
+
+#twitter{
+    background: url('./twitter.png') no-repeat center center/cover;
+}
+
+#linkedin{
+    background: url('./linkedin.png') no-repeat center center/cover;
+    
+}
+
+#printerest{
+    background: url('./pinterest.png') no-repeat center center/cover;
+
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+   
+}
+
+
+@media (min-width:1024px) and (max-width : 1280px) {
+    .navigation ul li{
+        font-size: 1.3rem;
+    }
+    section h1{
+        font-size: 3rem;
+    }
+    section p{
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    .box{
+        font-size: 1rem;
+        padding: 40px 0px 0px 10px;
+    }
+    input , select{
+        width: 100px;
+    }
+
+    #service .box{
+        border-radius: 400px 400px 400px 0px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .roomTypes{
+        width: 330px;
+        height: 530px;
+        text-align: center;
+    }
+
+    .roomTypes img{
+        padding: 20px;
+        width: 320px;
+        height: 280px;
+    }
+
+    .explore input{
+        font-size: 20px;
+        width: 200px;
+        height: 150;
+    }
+
+    .persons{  
+        border: 2px solid black;
+        width: 310px;
+        height: 300px;
+        /* padding: 20px; */
+    }
+
+    .persons .img{
+        display: inline-block;
+        border: 2px solid black;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .persons h2{
+        top: -30px;
+        padding: 20px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .about{
+        height: 70vh;
+    }
+    .about h1{
+        padding: 20px;
+        font-size: 4rem;
+    }
+    .about p{
+        font-size: 1.5rem;
+    }
+    
+    .about input{
+        font-size: 1.5rem;
+        height: 50px;
+        width: 500px;
+    }
+}
+
+
+@media (min-width:767px) and (max-width:1024px){
+    .navigation ul li{
+        font-size: 1rem;
+    }
+    section h1{
+        font-size: 3rem;
+    }
+    section p{
+        padding: 20px;
+        font-size: 1.25rem;
+    }
+    .box{
+        font-size: 1rem;
+        padding: 40px 0px 0px 10px;
+    }
+    input , select{
+        width: 100px;
+    }
+
+    #service .box{
+        border-radius: 400px 400px 100px 100px;
+        padding: 15px;
+        width: 110px;
+        height: 150px;
+    }
+
+    .roomTypes{
+        width: 250px;
+        height: 530px;
+        text-align: center;
+    }
+
+    .roomTypes img{
+        /* padding: 10px; */
+        width: 250px;
+        height: 250px;
+    }
+
+    .explore input{
+        font-size: 20px;
+        width: 200px;
+        height: 150;
+    }
+
+    .persons{  
+        border: 2px solid black;
+        width: 230px;
+        height: 300px;
+        /* padding: 20px; */
+    }
+
+    .persons .img{
+        display: inline-block;
+        border: 2px solid black;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .persons h2{
+        top: -20px;
+        padding: 10px;
+        width: 80px;
+        height: 50px;
+    }
+
+    .about{
+        height: 70vh;
+    }
+
+    .about h1{
+        padding: 20px;
+        font-size: 4rem;
+    }
+    .about p{
+        font-size: 1.5rem;
+    }
+    
+    .about input{
+        font-size: 1.5rem;
+        height: 50px;
+        width: 500px;
+    }
+}
+
+
+@media (min-width:410px) and (max-width:767px){
+    .dropDown{
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+    }
+    .navigation{
+        height: 100px;
+        display: block;
+    }
+    .logo{
+        position: relative;
+        float: right;
+        width: 90px;
+        height: 90px;
+    }
+    .navigation ul{
+        display: none;
+    }
+    section h1{
+        font-size: 2.5rem;
+    }
+    section p{
+        padding: 20px;
+        font-size: .9rem;
+    }
+    #booking {
+        position: relative;
+        height: 11vh;
+        bottom: 40px;
+        margin: auto;
+        border: 2px solid black;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+    }
+    .box{
+        font-size: .7rem;
+        padding: 10px 0px 0px 10px;
+        height: 10vh;
+    }
+    input , select{
+        width: 50px;
+    }
+
+    #service{
+        gap: 20px;
+    }
+    #service .box{
+        border-radius: 400px 400px 100px 100px;
+        padding: 15px;
+        width: 110px;
+        height: 130px;
+    }
+    
+    .roomBox{
+        width: 100%;
+    }
+    .roomSlide{
+        /* border: 1px solid black; */
+        width: 100%;
+        overflow: auto;
+    }
+    .rooms{
+        padding: 10px;
+        margin: auto;
+        width: 297vw;
+        gap: 20px;
+    }
+
+    .roomTypes{
+        border: 1px solid black;
+        width: 100%;
+        height: 420px;
+    }
+    .roomTypes h1{
+        font-size: 2rem;
+        
+    }
+    .roomTypes p{
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    .roomTypes img{
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .roomTypes input{
+        width: 80px;
+    }
+
+    .explore{
+        gap: 30px;
+    }
+    .exploreTxt h1{
+        font-size: 1rem;
+    }
+    .explore input{
+        font-size: 30px;
+        width: 50px;
+        height: 5vh;
+    }
+    
+    .explore input{
+        font-size: 20px;
+        width: 200px;
+        height: 150;
+    }
+
+    .hotelVideo{
+        width: 100%;
+        height: 60vh;
+        border: 2px solid black;
+    }
+
+    .guestSlide{
+        /* display: inline-block; */
+        border: 2px solid black;
+        width: 100%;
+        overflow: auto;
+    }
+    
+    .review{
+        margin: auto;
+        width: 309vw;
+    }
+
+    .persons{  
+        border: 2px solid black;
+        width: 100%;
+        height: 300px;
+    }
+
+    .persons .img{
+        display: inline-block;
+        border: 2px solid black;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .persons h2{
+        /* font-size: 1rem; */
+        right: 30px;
+        top: -25px;
+        padding-left: 100px;
+        width: 80px;
+        height: 50px;
+    }
+
+    .about{
+        height: 70vh;
+    }
+
+    .about h1{
+        padding: 20px;
+        font-size: 3rem;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+    
+    .about input{
+        font-size: 1.5rem;
+        height: 50px;
+        width: 200px;
+    }
+
+    .socials{
+        gap: 23px;
+    }
+    .socialLinks{
+        padding: 0px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .socials div h1{
+        display: none;
+    }
+}
+@media (min-width:250px) and (max-width:410px){
+    .dropDown{
+        display: block;
+    }
+    .dropDown{
+        display: inline-block;
+    }
+    .navigation{
+        height: 75px;
+        display: block;
+    }
+    .logo{
+        float: right;
+        position: relative;
+        width: 70px;
+        height: 70px;
+    }
+    .navigation ul{
+        display: none;
+    }
+    #serviceHead h4 {
+        font-size: 15px;
+    }
+    #serviceHead h1 {
+        font-size: 30px;
+    }
+    section h1{
+        font-size: 1.7rem;
+    }
+    section p{
+        padding: 20px;
+        font-size: .8rem;
+    }
+    #booking {
+        display: none;
+    }
+    .BBlink{
+        display: block;
+    }
+    .box{
+        font-size: .7rem;
+        padding: 10px 0px 0px 10px;
+        height: 10vh;
+    }
+    input , select{
+        width: 50px;
+    }
+    #service{
+        height: 70vh;
+        gap: 20px;
+    }
+    #service .box{
+        border-radius: 400px 400px 100px 100px;
+        padding: 15px;
+        width: 110px;
+        height: 130px;
+    }
+    
+    .roomBox{
+        width: 100%;
+    }
+    .roomSlide{
+        /* border: 1px solid black; */
+        width: 100%;
+        overflow: auto;
+    }
+    .rooms{
+        padding: 10px;
+        margin: auto;
+        width: 305vw;
+        gap: 20px;
+    }
+
+    .roomTypes{
+        border: 1px solid black;
+        width: 100%;
+        height: 460px;
+    }
+    .roomTypes h1{
+        font-size: 2rem;
+        
+    }
+    .roomTypes p{
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    .roomTypes img{
+        width: 235px;
+        height: 250px;
+    }
+
+
+    .roomTypes input{
+        width: 80px;
+    }
+
+    .explore{
+        gap: 0px;
+    }
+    .exploreTxt h1{
+        font-size: .7rem;
+    }
+    .explore input{
+        padding: 0px;
+        font-size: 10px;
+        width: 100px;
+        height: 40px;
+    }
+    
+
+    .hotelVideo{
+        width: 100%;
+        height: 40vh;
+        border: 2px solid black;
+    }
+    .hotelVideo video{
+        width: 100%;
+    }
+
+    .guestSlide{
+        /* display: inline-block; */
+        border: 2px solid black;
+        width: 100%;
+        overflow: auto;
+    }
+    
+    .review{
+        margin: auto;
+        width: 309vw;
+    }
+
+    .reviewHead h3{
+        font-size: 1rem;
+    }
+    .reviewHead h1{
+        font-size: 1.9rem;
+    }
+
+    .persons{  
+        border: 2px solid black;
+        width: 100%;
+        height: 300px;
+    }
+
+    .persons .img{
+        display: inline-block;
+        border: 2px solid black;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .persons h2{
+        /* font-size: 1rem; */
+        right: 30px;
+        top: -25px;
+        padding-left: 100px;
+        width: 80px;
+        height: 50px;
+    }
+
+    .about{
+        height: 75vh;
+    }
+
+    .about h1{
+        padding: 20px;
+        font-size: 3rem;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+    
+    .about input{
+        font-size: 1rem;
+        height: 30px;
+        width: 100px;
+    }
+
+    .socials{
+        gap: 23px;
+    }
+    .socialLinks{
+        width: 40px;
+        height: 40px;
+    }
+
+    .socials{
+        gap: 10px;
+    }
+    .socials div h1{
+        display: none;
+    }
+
+}
+
+
+/* 
+.box{
+    display: inline-block;
+} */
+
+
+
+/* Rooms */
+
+/* *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+} */
+
+
+.roomHead{
+    width: 100%;
+    border: 2px solid black;
+}
+
+.roomHead h1{
+    font-size: 2.5rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.rooms{
+    width: 85%;
+    margin: auto;
+    /* height: 50%; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.roomtypes{
+    padding: 10px;
+    width: 300px;
+    height: 40vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.roomtypes h3,p{
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.roomtypes input{
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    /* display: none; */
+}
+
+
+.roomtypes img {
+    margin: auto;
+    /* display: block; */
+    width: 150px;
+    height: 150px;
+}
+
+
+
+#formm{
+    display: none;
+}
+
+#bodyy{
+    display: block;
+}
+
+
+/* 
+.box{
+    display: inline-block;
+} */
+
+/* form */
+
+#formm::before{
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    /* background-color: aqua; */
+    background: url('./registration.jpg') no-repeat center center/cover;
+    margin: auto;
+    opacity: .7;
+
+}
+
+
+#formm td{
+    height: 50px;
+    text-align: center;
+    font-weight: bolder;
+    
+
+}
+#formm select{
+    height: 50px;
+    height: 30px;
+    width: 15vh;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    
+    
+}
+#formm table{
+    border-radius: 20px;
+    
+}
+
+
+
+#formm td input{
+    height: 30px;
+    width: 50vh;
+    border-radius: 5px;
+    background: transparent;
+    font-weight: bold;
+
+}
+.submit input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 1rem;
+}
